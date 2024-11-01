@@ -1,13 +1,14 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import TabNavigations from './App/Navigations/TabNavigations';
+import TabNavigations from './App/Navigations/TabNavigation';
+import TabNavigation from './App/Navigations/TabNavigation';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <TabNavigations/>
+        <TabNavigation/>
       </NavigationContainer>
     </View>
   );
@@ -17,7 +18,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
